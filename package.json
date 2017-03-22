@@ -1,0 +1,17 @@
+{
+  "name": "attendance2",
+  "version": "1.0.0",
+  "description": "attendance system",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "周杰 张超 陈开河 李真骁",
+  "license": "ISC",
+  "devDependencies": {
+    "bower": "^1.8.0",
+    "gulp": "^3.9.1",
+    "gulp-replace": "^0.5.4",
+    "gulp-sass": "^3.1.0"
+  }
+}
