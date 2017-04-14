@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Xenon Boostrap Admin Panel" />
+	<meta name="author" content="" />
+	
+	<title>Xenon - Modals</title>
+
+	<link rel="stylesheet" href="http://fonts.useso.com/css?family=Arimo:400,700,400italic">
+	<link rel="stylesheet" href="assets/css/fonts/linecons/css/linecons.css">
+	<link rel="stylesheet" href="assets/css/fonts/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" href="assets/css/xenon-core.css">
+	<link rel="stylesheet" href="assets/css/xenon-forms.css">
+	<link rel="stylesheet" href="assets/css/xenon-components.css">
+	<link rel="stylesheet" href="assets/css/xenon-skins.css">
+	<link rel="stylesheet" href="assets/css/custom.css">
+
+	<script src="assets/js/jquery-1.11.1.min.js"></script>
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+		<script src="assets/js/html5shiv.min.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+	
+	
+</head>
+<body class="page-body">
+
+
+	<div class="page-container"><!-- add class "sidebar-collapsed" to close sidebar by default, "chat-visible" to make chat appear always -->
+
+		<!-- Add "fixed" class to make the sidebar fixed always to the browser viewport. -->
+		<!-- Adding class "toggle-others" will keep only one menu item open at a time. -->
+		<!-- Adding class "collapsed" collapse sidebar root elements and show only icons. -->
+
+		<!--左侧边栏-->
+		<div class="sidebar-menu toggle-others fixed">
+
+			<div class="sidebar-menu-inner">
+
+				<!-- logo -->
+				<header class="logo-env">
+					<div class="logo">
+						<a href="3-home.html" class="logo-expanded">
+							<img src="assets/images/timg.jpg" width="80" alt="" />
+						</a>
+					</div>
+
+				</header>
+
+				<!--左侧列表		-->
+				<ul id="main-menu" class="main-menu">
+					<!-- add class "multiple-expanded" to allow multiple submenus to open -->
+					<!-- class "auto-inherit-active-class" will automatically add "active" class for parent elements who are marked already with class "active" -->
+					<li>
+						<a href="dashboard-1.html">
+							<i class="linecons-cog"></i>
+							<span class="title">用户管理</span>
+						</a>
+						<ul>
+							<li>
+								<a href="4-usertable.html">
+									<span class="title">添加用户</span>
+								</a>
+							</li>
+							<li>
+								<a href="4-usertable.html">
+									<span class="title">删除用户</span>
+								</a>
+							</li>
+							<li>
+								<a href="4-usertable.html">
+									<span class="title">编辑用户</span>
+								</a>
+							</li>
+							<li>
+								<a href="4-usertable.html">
+									<span class="title">查看用户列表</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="layout-variants.html">
+							<i class="linecons-desktop"></i>
+							<span class="title">角色管理</span>
+						</a>
+						<ul>
+							<li>
+								<a href="5-addpower.html">
+									<span class="title">查看所有角色</span>
+								</a>
+							</li>
+							<li>
+								<a href="5-addpower.html">
+									<span class="title">增加角色</span>
+								</a>
+							</li>
+							<li>
+								<a href="5-addpower.html">
+									<span class="title">删除角色</span>
+								</a>
+							</li>
+							<li>
+								<a href="5-addpower.html">
+									<span class="title">编辑角色</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="ui-panels.html">
+							<i class="linecons-note"></i>
+							<span class="title">查看考勤记录</span>
+						</a>
+						<ul>
+							<li>
+								<a href="ui-panels.html">
+									<span class="title">准时学生列表</span>
+								</a>
+							</li>
+							<li>
+								<a href="ui-buttons.html">
+									<span class="title">迟到学生列表</span>
+								</a>
+							</li>
+							<li>
+								<a href="ui-tabs-accordions.html">
+									<span class="title">请假学生列表</span>
+								</a>
+							</li>
+							<li>
+								<a href="ui-modals.html">
+									<span class="title">所有考勤记录</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="ui-widgets.html">
+							<i class="linecons-star"></i>
+							<span class="title">查看个人信息</span>
+						</a>
+					</li>
+					<li>
+						<a href="mailbox-main.html">
+							<i class="linecons-mail"></i>
+							<span class="title">消息提醒</span>
+							<span class="label label-success pull-right">5</span>
+						</a>
+						<ul>
+							<li>
+								<a href="mailbox-main.html">
+									<span class="title">Inbox</span>
+								</a>
+							</li>
+							<li>
+								<a href="mailbox-compose.html">
+									<span class="title">Compose Message</span>
+								</a>
+							</li>
+							<li>
+								<a href="mailbox-message.html">
+									<span class="title">View Message</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="tables-basic.html">
+							<i class="linecons-database"></i>
+							<span class="title">关于本系统</span>
+						</a>
+						<ul>
+							<li>
+								<a href="tables-basic.html">
+									<span class="title">Basic Tables</span>
+								</a>
+							</li>
+							<li>
+								<a href="tables-responsive.html">
+									<span class="title">Responsive Table</span>
+								</a>
+							</li>
+							<li>
+								<a href="tables-datatables.html">
+									<span class="title">Data Tables</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="forms-native.html">
+							<i class="linecons-params"></i>
+							<span class="title">退出</span>
+						</a>
+						<ul>
+							<li>
+								<a href="forms-native.html">
+									<span class="title">Native Elements</span>
+								</a>
+							</li>
+							<li>
+								<a href="forms-advanced.html">
+									<span class="title">Advanced Plugins</span>
+								</a>
+							</li>
+							<li>
+								<a href="forms-wizard.html">
+									<span class="title">Form Wizard</span>
+								</a>
+							</li>
+							<li>
+								<a href="forms-validation.html">
+									<span class="title">Form Validation</span>
+								</a>
+							</li>
+							<li>
+								<a href="forms-input-masks.html">
+									<span class="title">Input Masks</span>
+								</a>
+							</li>
+							<li>
+								<a href="forms-file-upload.html">
+									<span class="title">File Upload</span>
+								</a>
+							</li>
+							<li>
+								<a href="forms-editors.html">
+									<span class="title">Editors</span>
+								</a>
+							</li>
+							<li>
+								<a href="forms-sliders.html">
+									<span class="title">Sliders</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="extra-gallery.html">
+							<i class="linecons-beaker"></i>
+							<span class="title">反馈建议</span>
+							<span class="label label-purple pull-right hidden-collapsed">New Items</span>
+						</a>
+						<ul>
+							<li>
+								<a href="extra-icons-fontawesome.html">
+									<span class="title">Icons</span>
+									<span class="label label-warning pull-right">4</span>
+								</a>
+								<ul>
+									<li>
+										<a href="extra-icons-fontawesome.html">
+											<span class="title">Font Awesome</span>
+										</a>
+									</li>
+									<li>
+										<a href="extra-icons-linecons.html">
+											<span class="title">Linecons</span>
+										</a>
+									</li>
+									<li>
+										<a href="extra-icons-elusive.html">
+											<span class="title">Elusive</span>
+										</a>
+									</li>
+									<li>
+										<a href="extra-icons-meteocons.html">
+											<span class="title">Meteocons</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="extra-maps-google.html">
+									<span class="title">Maps</span>
+								</a>
+								<ul>
+									<li>
+										<a href="extra-maps-google.html">
+											<span class="title">Google Maps</span>
+										</a>
+									</li>
+									<li>
+										<a href="extra-maps-advanced.html">
+											<span class="title">Advanced Map</span>
+										</a>
+									</li>
+									<li>
+										<a href="extra-maps-vector.html">
+											<span class="title">Vector Map</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="extra-gallery.html">
+									<span class="title">Gallery</span>
+								</a>
+							</li>
+							<li>
+								<a href="extra-calendar.html">
+									<span class="title">Calendar</span>
+								</a>
+							</li>
+							<li>
+								<a href="extra-profile.html">
+									<span class="title">Profile</span>
+								</a>
+							</li>
+							<li>
+								<a href="1-login.html">
+									<span class="title">Login</span>
+								</a>
+							</li>
+							<li>
+								<a href="extra-lockscreen.html">
+									<span class="title">Lockscreen</span>
+								</a>
+							</li>
+							<li>
+								<a href="extra-login-light.html">
+									<span class="title">Login Light</span>
+								</a>
+							</li>
+							<li>
+								<a href="extra-timeline.html">
+									<span class="title">Timeline</span>
+								</a>
+							</li>
+							<li>
+								<a href="extra-timeline-center.html">
+									<span class="title">Timeline Centerd</span>
+								</a>
+							</li>
+							<li>
+								<a href="extra-notes.html">
+									<span class="title">Notes</span>
+								</a>
+							</li>
+							<li>
+								<a href="extra-image-crop.html">
+									<span class="title">Image Crop</span>
+								</a>
+							</li>
+							<li>
+								<a href="extra-portlets.html">
+									<span class="title">Portlets</span>
+								</a>
+							</li>
+							<li class="active">
+								<a href="3-home.html">
+									<span class="title">Blank Page</span>
+								</a>
+							</li>
+							<li>
+								<a href="extra-search.html">
+									<span class="title">Search</span>
+								</a>
+							</li>
+							<li>
+								<a href="extra-invoice.html">
+									<span class="title">Invoice</span>
+								</a>
+							</li>
+							<li>
+								<a href="extra-not-found.html">
+									<span class="title">404 Page</span>
+								</a>
+							</li>
+							<li>
+								<a href="extra-tocify.html">
+									<span class="title">Tocify</span>
+								</a>
+							</li>
+							<li>
+								<a href="extra-loader.html">
+									<span class="title">Loading Progress</span>
+								</a>
+							</li>
+							<li>
+								<a href="extra-page-loading-ol.html">
+									<span class="title">Page Loading Overlay</span>
+								</a>
+							</li>
+							<li>
+								<a href="extra-notifications.html">
+									<span class="title">Notifications</span>
+								</a>
+							</li>
+							<li>
+								<a href="extra-nestable-lists.html">
+									<span class="title">Nestable Lists</span>
+								</a>
+							</li>
+							<li>
+								<a href="extra-scrollable.html">
+									<span class="title">Scrollable</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+
+			</div>
+
+		</div>
+
+		<div class="main-content">
+			<!-- 第一行信息-->
+			<nav class="navbar user-info-navbar" role="navigation">
+
+				<!-- Right links for user info navbar -->
+				<ul class="user-info-menu right-links list-inline list-unstyled">
+
+					<!--搜索按钮-->
+					<li class="search-form"><!-- You can add "always-visible" to show make the search input visible -->
+
+						<form method="get" action="extra-search.html">
+							<input type="text" name="s" class="form-control search-field" placeholder="Type to search..." />
+
+							<button type="submit" class="btn btn-link">
+								<i class="linecons-search"></i>
+							</button>
+						</form>
+
+					</li>
+
+					<!--个人信息-->
+					<li class="dropdown user-profile">
+
+						<a href="#" data-toggle="dropdown">
+							<img src="assets/images/user-4.png" alt="user-image" class="img-circle img-inline userpic-32" width="28" />
+							<span>
+								李老师
+								<i class="fa-angle-down"></i>
+							</span>
+						</a>
+
+						<!--用户下拉菜单-->
+						<ul class="dropdown-menu user-profile-menu list-unstyled">
+							<li>
+								<a href="#edit-profile">
+									<i class="fa-edit"></i>
+									编辑
+								</a>
+							</li>
+							<li>
+								<a href="#settings">
+									<i class="fa-wrench"></i>
+									设置
+								</a>
+							</li>
+							<li>
+								<a href="#profile">
+									<i class="fa-user"></i>
+									个人信息
+								</a>
+							</li>
+							<li>
+								<a href="#help">
+									<i class="fa-info"></i>
+									帮助
+								</a>
+							</li>
+							<li class="last">
+								<a href="extra-lockscreen.html">
+									<i class="fa-lock"></i>
+									退出
+								</a>
+							</li>
+						</ul>
+
+					</li>
+
+					<!--聊天图标-->
+					<li>
+						<a href="#" data-toggle="chat">
+							<i class="fa-comments-o"></i>
+						</a>
+					</li>
+
+				</ul>
+
+			</nav>
+			<!-- User Info, Notifications and Menu Bar -->
+			<div class="page-title">
+
+				<div class="title-env">
+					<h1 class="title">数据添加/修改</h1>
+					<!--<p class="description">Modals and their variants of usage</p>-->
+				</div>
+
+					<div class="breadcrumb-env">
+
+								<ol class="breadcrumb bc-1">
+									<li>
+							<a href="dashboard-1.html"><i class="fa-home"></i>Home</a>
+						<!--</li>-->
+								<!--<li>-->
+
+										<!--<a href="ui-panels.html">UI Elements</a>-->
+								<!--</li>-->
+							<!--<li class="active">-->
+
+										<!--<strong>Modals</strong>-->
+								<!--</li>-->
+								</ol>
+
+				</div>
+
+			</div>
+
+			<!-- 添加数据 -->
+
+
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="field-1" class="control-label">姓名</label>
+
+									<input type="text" class="form-control" id="field-1" placeholder="张三">
+								</div>
+
+							</div>
+
+							<div class="col-md-12">
+
+								<div class="form-group">
+									<label for="field-2" class="control-label">学号</label>
+
+									<input type="text" class="form-control" id="field-2" placeholder="160327000">
+								</div>
+
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-12">
+
+								<div class="form-group">
+									<label for="field-3" class="control-label">课程信息</label>
+
+									<input type="text" class="form-control" id="field-3" placeholder="计算机工程训练">
+								</div>
+
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-12">
+
+								<div class="form-group">
+									<label for="field-4" class="control-label">日期</label>
+
+									<input type="text" class="form-control" id="field-4" placeholder="2017-04-08">
+								</div>
+
+							</div>
+
+							<div class="col-md-12">
+
+								<div class="form-group">
+									<label for="field-5" class="control-label">班级</label>
+
+									<input type="text" class="form-control" id="field-5" placeholder="计算机技术一班">
+								</div>
+
+							</div>
+
+							<div class="col-md-12">
+
+								<div class="form-group">
+									<label for="field-6" class="control-label">任课老师</label>
+
+									<input type="text" class="form-control" id="field-6" placeholder="池志标">
+								</div>
+
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-12">
+
+								<div class="form-group no-margin">
+									<label for="field-7" class="control-label">缺勤理由</label>
+
+									<textarea class="form-control autogrow" id="field-7" placeholder="简要说明"></textarea>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+
+					<div class="modal-footer">
+						<button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-info">Save changes</button>
+					</div>
+			<div/>
+			<!-- Main Footer -->
+			<!-- Choose between footer styles: "footer-type-1" or "footer-type-2" -->
+			<!-- Add class "sticky" to  always stick the footer to the end of page (if page contents is small) -->
+			<!-- Or class "fixed" to  always fix the footer to the end of page -->
+			<footer class="main-footer sticky footer-type-1">
+
+				<div class="footer-inner">
+
+					<!-- Add your copyright text here -->
+					<div class="footer-text">
+						&copy; 2017-2020
+						<strong>工程实践</strong>
+						小组成员 ：李真骁 陈开河 张超 周杰
+						<!--More Templates <a href="http://www.mycodes.net/" target="_blank" title="源码之家">源码之家</a> - Collect from <a href="#/" title="网页模板" target="_blank">网页模板</a>-->
+					</div>
+
+
+					<!-- Go to Top Link, just add rel="go-top" to any link to add this functionality -->
+					<div class="go-up">
+
+						<a href="#" rel="go-top">
+							<i class="fa-angle-up"></i>
+						</a>
+
+					</div>
+
+				</div>
+
+			</footer>
+		</div>
+
+
+	</div>
+
+
+
+
+
+
+
+	<!-- Bottom Scripts -->
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/TweenMax.min.js"></script>
+	<script src="assets/js/resizeable.js"></script>
+	<script src="assets/js/joinable.js"></script>
+	<script src="assets/js/xenon-api.js"></script>
+	<script src="assets/js/xenon-toggles.js"></script>
+
+
+	<!-- JavaScripts initializations and stuff -->
+	<script src="assets/js/xenon-custom.js"></script>
+
+</body>
+</html>
