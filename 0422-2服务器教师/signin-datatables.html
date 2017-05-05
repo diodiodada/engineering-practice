@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Xenon Boostrap Admin Panel" />
+	<meta name="author" content="" />
+	
+	<title>学生签到列表</title>
+
+	<link rel="stylesheet" href="http://fonts.useso.com/css?family=Arimo:400,700,400italic">
+	<link rel="stylesheet" href="assets/css/fonts/linecons/css/linecons.css">
+	<link rel="stylesheet" href="assets/css/fonts/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" href="assets/css/xenon-core.css">
+	<link rel="stylesheet" href="assets/css/xenon-forms.css">
+	<link rel="stylesheet" href="assets/css/xenon-components.css">
+	<link rel="stylesheet" href="assets/css/xenon-skins.css">
+	<link rel="stylesheet" href="assets/css/custom.css">
+
+	<script src="assets/js/jquery-1.11.1.min.js"></script>
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+		<script src="assets/js/html5shiv.min.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+	
+	
+</head>
+<body class="page-body">
+<div class="page-container">
+<!--左侧边栏-->
+<div class="sidebar-menu toggle-others fixed">
+
+	<div class="sidebar-menu-inner">
+
+		<!-- logo -->
+		<header class="logo-env">
+			<div class="logo">
+				<a href="3-home.html" class="logo-expanded">
+					<img src="assets/images/timg.jpg" width="80" alt="" />
+				</a>
+			</div>
+
+		</header>
+
+		<!--左侧列表		-->
+		<ul id="main-menu" class="main-menu">
+			<!-- add class "multiple-expanded" to allow multiple submenus to open -->
+			<!-- class "auto-inherit-active-class" will automatically add "active" class for parent elements who are marked already with class "active" -->
+			<li>
+				<a href="dashboard-1.html">
+					<i class="linecons-cog"></i>
+					<span class="title">用户管理</span>
+				</a>
+				<ul>
+					<li>
+						<a href="4-usertable.html">
+							<span class="title">添加用户</span>
+						</a>
+					</li>
+					<li>
+						<a href="4-usertable.html">
+							<span class="title">删除用户</span>
+						</a>
+					</li>
+					<li>
+						<a href="4-usertable.html">
+							<span class="title">编辑用户</span>
+						</a>
+					</li>
+					<li>
+						<a href="4-usertable.html">
+							<span class="title">查看用户列表</span>
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="layout-variants.html">
+					<i class="linecons-desktop"></i>
+					<span class="title">角色管理</span>
+				</a>
+				<ul>
+					<li>
+						<a href="5-addpower.html">
+							<span class="title">查看所有角色</span>
+						</a>
+					</li>
+					<li>
+						<a href="5-addpower.html">
+							<span class="title">增加角色</span>
+						</a>
+					</li>
+					<li>
+						<a href="5-addpower.html">
+							<span class="title">删除角色</span>
+						</a>
+					</li>
+					<li>
+						<a href="5-addpower.html">
+							<span class="title">编辑角色</span>
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="class-datatables.html">
+					<i class="linecons-note"></i>
+					<span class="title">班级管理</span>
+				</a>
+				<ul>
+					<li>
+						<a href="class-datatables.html">
+							<span class="title">班级列表</span>
+						</a>
+					</li>
+					<li>
+						<a href="students-datatables.html">
+							<span class="title">学生列表</span>
+						</a>
+					</li>
+					<li>
+						<a href="plan-datatables.html">
+							<span class="title">教学计划列表</span>
+						</a>
+					</li>
+					<li>
+						<a href="signin-datatables.html">
+							<span class="title">学生签到记录列表</span>
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="ui-widgets.html">
+					<i class="linecons-star"></i>
+					<span class="title">查看个人信息</span>
+				</a>
+			</li>
+			<li>
+				<a href="mailbox-main.html">
+					<i class="linecons-mail"></i>
+					<span class="title">消息提醒</span>
+					<span class="label label-success pull-right">5</span>
+				</a>
+				<ul>
+					<li>
+						<a href="mailbox-main.html">
+							<span class="title">Inbox</span>
+						</a>
+					</li>
+					<li>
+						<a href="mailbox-compose.html">
+							<span class="title">Compose Message</span>
+						</a>
+					</li>
+					<li>
+						<a href="mailbox-message.html">
+							<span class="title">View Message</span>
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="tables-basic.html">
+					<i class="linecons-database"></i>
+					<span class="title">关于本系统</span>
+				</a>
+				<ul>
+					<li>
+						<a href="tables-basic.html">
+							<span class="title">Basic Tables</span>
+						</a>
+					</li>
+					<li>
+						<a href="tables-responsive.html">
+							<span class="title">Responsive Table</span>
+						</a>
+					</li>
+					<li>
+						<a href="class-datatables.html">
+							<span class="title">Data Tables</span>
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="forms-native.html">
+					<i class="linecons-params"></i>
+					<span class="title">退出</span>
+				</a>
+				<ul>
+					<li>
+						<a href="forms-native.html">
+							<span class="title">Native Elements</span>
+						</a>
+					</li>
+					<li>
+						<a href="forms-advanced.html">
+							<span class="title">Advanced Plugins</span>
+						</a>
+					</li>
+					<li>
+						<a href="forms-wizard.html">
+							<span class="title">Form Wizard</span>
+						</a>
+					</li>
+					<li>
+						<a href="forms-validation.html">
+							<span class="title">Form Validation</span>
+						</a>
+					</li>
+					<li>
+						<a href="forms-input-masks.html">
+							<span class="title">Input Masks</span>
+						</a>
+					</li>
+					<li>
+						<a href="forms-file-upload.html">
+							<span class="title">File Upload</span>
+						</a>
+					</li>
+					<li>
+						<a href="forms-editors.html">
+							<span class="title">Editors</span>
+						</a>
+					</li>
+					<li>
+						<a href="forms-sliders.html">
+							<span class="title">Sliders</span>
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="extra-gallery.html">
+					<i class="linecons-beaker"></i>
+					<span class="title">反馈建议</span>
+					<span class="label label-purple pull-right hidden-collapsed">New Items</span>
+				</a>
+				<ul>
+					<li>
+						<a href="extra-icons-fontawesome.html">
+							<span class="title">Icons</span>
+							<span class="label label-warning pull-right">4</span>
+						</a>
+						<ul>
+							<li>
+								<a href="extra-icons-fontawesome.html">
+									<span class="title">Font Awesome</span>
+								</a>
+							</li>
+							<li>
+								<a href="extra-icons-linecons.html">
+									<span class="title">Linecons</span>
+								</a>
+							</li>
+							<li>
+								<a href="extra-icons-elusive.html">
+									<span class="title">Elusive</span>
+								</a>
+							</li>
+							<li>
+								<a href="extra-icons-meteocons.html">
+									<span class="title">Meteocons</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="extra-maps-google.html">
+							<span class="title">Maps</span>
+						</a>
+						<ul>
+							<li>
+								<a href="extra-maps-google.html">
+									<span class="title">Google Maps</span>
+								</a>
+							</li>
+							<li>
+								<a href="extra-maps-advanced.html">
+									<span class="title">Advanced Map</span>
+								</a>
+							</li>
+							<li>
+								<a href="extra-maps-vector.html">
+									<span class="title">Vector Map</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="extra-gallery.html">
+							<span class="title">Gallery</span>
+						</a>
+					</li>
+					<li>
+						<a href="extra-calendar.html">
+							<span class="title">Calendar</span>
+						</a>
+					</li>
+					<li>
+						<a href="extra-profile.html">
+							<span class="title">Profile</span>
+						</a>
+					</li>
+					<li>
+						<a href="1-login.html">
+							<span class="title">Login</span>
+						</a>
+					</li>
+					<li>
+						<a href="extra-lockscreen.html">
+							<span class="title">Lockscreen</span>
+						</a>
+					</li>
+					<li>
+						<a href="extra-login-light.html">
+							<span class="title">Login Light</span>
+						</a>
+					</li>
+					<li>
+						<a href="extra-timeline.html">
+							<span class="title">Timeline</span>
+						</a>
+					</li>
+					<li>
+						<a href="extra-timeline-center.html">
+							<span class="title">Timeline Centerd</span>
+						</a>
+					</li>
+					<li>
+						<a href="extra-notes.html">
+							<span class="title">Notes</span>
+						</a>
+					</li>
+					<li>
+						<a href="extra-image-crop.html">
+							<span class="title">Image Crop</span>
+						</a>
+					</li>
+					<li>
+						<a href="extra-portlets.html">
+							<span class="title">Portlets</span>
+						</a>
+					</li>
+					<li class="active">
+						<a href="3-home.html">
+							<span class="title">Blank Page</span>
+						</a>
+					</li>
+					<li>
+						<a href="extra-search.html">
+							<span class="title">Search</span>
+						</a>
+					</li>
+					<li>
+						<a href="extra-invoice.html">
+							<span class="title">Invoice</span>
+						</a>
+					</li>
+					<li>
+						<a href="extra-not-found.html">
+							<span class="title">404 Page</span>
+						</a>
+					</li>
+					<li>
+						<a href="extra-tocify.html">
+							<span class="title">Tocify</span>
+						</a>
+					</li>
+					<li>
+						<a href="extra-loader.html">
+							<span class="title">Loading Progress</span>
+						</a>
+					</li>
+					<li>
+						<a href="extra-page-loading-ol.html">
+							<span class="title">Page Loading Overlay</span>
+						</a>
+					</li>
+					<li>
+						<a href="extra-notifications.html">
+							<span class="title">Notifications</span>
+						</a>
+					</li>
+					<li>
+						<a href="extra-nestable-lists.html">
+							<span class="title">Nestable Lists</span>
+						</a>
+					</li>
+					<li>
+						<a href="extra-scrollable.html">
+							<span class="title">Scrollable</span>
+						</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+
+	</div>
+
+</div>
+
+<div class="main-content">
+
+				   <!-- 第一行信息-->
+				   <nav class="navbar user-info-navbar" role="navigation">
+
+					   <!-- Right links for user info navbar -->
+					   <ul class="user-info-menu right-links list-inline list-unstyled">
+
+						   <!--搜索按钮-->
+						   <li class="search-form"><!-- You can add "always-visible" to show make the search input visible -->
+
+							   <form method="get" action="extra-search.html">
+								   <input type="text" name="s" class="form-control search-field" placeholder="Type to search..." />
+
+								   <button type="submit" class="btn btn-link">
+									   <i class="linecons-search"></i>
+								   </button>
+							   </form>
+
+						   </li>
+
+						   <!--个人信息-->
+						   <li class="dropdown user-profile">
+
+							   <a href="#" data-toggle="dropdown">
+								   <img src="assets/images/user-4.png" alt="user-image" class="img-circle img-inline userpic-32" width="28" />
+							<span>
+								李老师
+								<i class="fa-angle-down"></i>
+							</span>
+							   </a>
+
+							   <!--用户下拉菜单-->
+							   <ul class="dropdown-menu user-profile-menu list-unstyled">
+								   <li>
+									   <a href="#edit-profile">
+										   <i class="fa-edit"></i>
+										   编辑
+									   </a>
+								   </li>
+								   <li>
+									   <a href="#settings">
+										   <i class="fa-wrench"></i>
+										   设置
+									   </a>
+								   </li>
+								   <li>
+									   <a href="#profile">
+										   <i class="fa-user"></i>
+										   个人信息
+									   </a>
+								   </li>
+								   <li>
+									   <a href="#help">
+										   <i class="fa-info"></i>
+										   帮助
+									   </a>
+								   </li>
+								   <li class="last">
+									   <a href="extra-lockscreen.html">
+										   <i class="fa-lock"></i>
+										   退出
+									   </a>
+								   </li>
+							   </ul>
+
+						   </li>
+
+						   <!--聊天图标-->
+						   <li>
+							   <a href="#" data-toggle="chat">
+								   <i class="fa-comments-o"></i>
+							   </a>
+						   </li>
+
+					   </ul>
+
+				   </nav>
+
+
+
+
+
+			<div class="page-title">
+				
+				<div class="title-env">
+					<h1 class="title">签到详情</h1>
+					<!--<p class="description">Dynamic table variants with pagination and other controls</p>-->
+				</div>
+				
+					<div class="breadcrumb-env">
+					
+								<ol class="breadcrumb bc-1">
+									<li>
+							<a href="3-home.html"><i class="fa-home"></i>Home</a>
+						</li>
+								<!--<li>-->
+						<!---->
+										<!--<a href="tables-basic.html">Tables</a>-->
+								<!--</li>-->
+							<!--<li class="active">-->
+						<!---->
+										<!--<strong>数据列表</strong>-->
+								<!--</li>-->
+								</ol>
+								
+				</div>
+					
+			</div>
+
+
+
+
+
+
+    <!--搜索查询-->
+	<div class="row">
+		<div class="col-md-12">
+
+			<div class="panel panel-default">
+				<!--<div class="panel-heading">列表操作</div>-->
+				<div class="panel-body">
+					<td>学年学期</td>
+					<div class="btn-group">
+						<button type="button" class="btn  dropdown-toggle" data-toggle="dropdown">
+							2016-2017-2<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu " role="menu">
+							<li>
+								<a href="#">2016-2017-2</a>
+							</li>
+							<li>
+								<a href="#">2016-2017-1</a>
+							</li>
+							<li>
+								<a href="#">2015-2016-2</a>
+							</li>
+
+							<li>
+								<a href="#">2015-2016-1</a>
+							</li>
+						</ul>
+					</div>
+					<td>课程名称</td>
+					<input type="text"  placeholder="">
+
+					<td>周数</td>
+					<div class="btn-group">
+						<button type="button" class="btn  dropdown-toggle" data-toggle="dropdown">
+							---1--- <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu " role="menu">
+							<li>
+								<a href="#">1</a>
+							</li>
+							<li>
+								<a href="#">2</a>
+							</li>
+							<li>
+								<a href="#">3</a>
+							</li>
+
+							<li>
+								<a href="#">4</a>
+							</li>
+							<li>
+								<a href="#">5</a>
+							</li>
+							<li>
+								<a href="#">6</a>
+							</li>
+							<li>
+								<a href="#">7</a>
+							</li>
+
+							<li>
+								<a href="#">8</a>
+							</li>
+							<li>
+								<a href="#">9</a>
+							</li>
+							<li>
+								<a href="#">10</a>
+							</li>
+							<li>
+								<a href="#">11</a>
+							</li>
+
+							<li>
+								<a href="#">12</a>
+							</li>
+							<li>
+								<a href="#">13</a>
+							</li>
+							<li>
+								<a href="#">14</a>
+							</li>
+							<li>
+								<a href="#">15</a>
+							</li>
+
+							<li>
+								<a href="#">16</a>
+							</li>
+							<li>
+								<a href="#">17</a>
+							</li>
+							<li>
+								<a href="#">18</a>
+							</li>
+							<li>
+								<a href="#">19</a>
+							</li>
+
+							<li>
+								<a href="#">20</a>
+							</li>
+						</ul>
+					</div>
+					<td>日期</td>
+					<div class="btn-group">
+						<button type="button" class="btn  dropdown-toggle" data-toggle="dropdown">
+							星期一<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu " role="menu">
+							<li>
+								<a href="#">星期一</a>
+							</li>
+							<li>
+								<a href="#">星期二</a>
+							</li>
+							<li>
+								<a href="#">星期三</a>
+							</li>
+
+							<li>
+								<a href="#">星期四</a>
+							</li>
+							<li>
+								<a href="#">星期五</a>
+							</li>
+							<li>
+								<a href="#">星期六</a>
+							</li>
+							<li>
+								<a href="#">星期日</a>
+							</li>
+						</ul>
+					</div>
+					<td>班级</td>
+					<div class="btn-group">
+						<button type="button" class="btn  dropdown-toggle" data-toggle="dropdown">
+							计算机技术一班<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu " role="menu">
+							<li>
+								<a href="#">1班</a>
+							</li>
+							<li>
+								<a href="#">2班</a>
+							</li>
+							<li>
+								<a href="#">3班</a>
+							</li>
+
+							<li>
+								<a href="#">4班</a>
+							</li>
+						</ul>
+					</div>
+					<!--<button class="btn btn-white">添加</button>-->
+					<button class="btn btn-gray">查询</button>
+
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!--  Table -->
+	<div class="row">
+		<div class="col-md-12">
+
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">16级 计算机技术 一班 第一周 星期一 计算机工程实训 签到列表</h3>
+
+					<div class="panel-options">
+						<a href="#">
+							<i class="linecons-cog"></i>
+						</a>
+
+						<a href="#" data-toggle="panel">
+							<span class="collapse-icon">&ndash;</span>
+							<span class="expand-icon">+</span>
+						</a>
+
+						<a href="#" data-toggle="reload">
+							<i class="fa-rotate-right"></i>
+						</a>
+
+						<a href="#" data-toggle="remove">
+							&times;
+						</a>
+					</div>
+				</div>
+				<div class="panel-body">
+
+					<div class="table-responsive" data-pattern="priority-columns" data-focus-btn-icon="fa-asterisk" data-sticky-table-header="true" data-add-display-all-btn="true" data-add-focus-btn="true">
+
+						<table cellspacing="0" class="table table-small-font table-bordered table-striped">
+							<thead>
+							<tr>
+								<th>学号</th>
+								<th >姓名</th>
+								<th >签到时间</th>
+								<th >签离时间</th>
+								<th >缺勤标志</th>
+
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<th>160327001</th>
+								<td>张三</td>
+								<td>8:20</td>
+								<td>11:30</td>
+								<td></td>
+							</tr>
+							<tr>
+								<th>160327002</th>
+								<td>李四</td>
+								<td>8:20</td>
+								<td>11:30</td>
+								<td></td>
+							</tr>
+							<tr>
+								<th>160327003</th>
+								<td>王五</td>
+								<td>8:20</td>
+								<td>11:30</td>
+								<td>缺勤</td>
+							</tr>
+							<tr>
+								<th>160327004</th>
+								<td>刘二</td>
+								<td>8:20</td>
+								<td>11:30</td>
+								<td></td>
+							</tr>
+							<tr>
+								<th>160327005</th>
+								<td>小花</td>
+								<td>8:20</td>
+								<td>11:30</td>
+								<td></td>
+							</tr>
+							<tr>
+								<th>160327006</th>
+								<td>小红</td>
+								<td>8:20</td>
+								<td>11:30</td>
+								<td></td>
+							</tr>
+							<tr>
+								<th>160327007</th>
+								<td>赵华</td>
+								<td>8:20</td>
+								<td>11:30</td>
+								<td></td>
+							</tr>
+							<tr>
+								<th>160327008</th>
+								<td>哈哈</td>
+								<td>8:20</td>
+								<td>11:30</td>
+								<td></td>
+							</tr>
+							<tr>
+								<th>160327001</th>
+								<td>张三</td>
+								<td>8:20</td>
+								<td>11:30</td>
+								<td></td>
+							</tr>
+							<tr>
+								<th>160327002</th>
+								<td>李四</td>
+								<td>8:20</td>
+								<td>11:30</td>
+								<td></td>
+							</tr>
+							<tr>
+								<th>160327003</th>
+								<td>王五</td>
+								<td>8:20</td>
+								<td>11:30</td>
+								<td>缺勤</td>
+							</tr>
+							<tr>
+								<th>160327004</th>
+								<td>刘二</td>
+								<td>8:20</td>
+								<td>11:30</td>
+								<td></td>
+							</tr>
+							<tr>
+								<th>160327005</th>
+								<td>小花</td>
+								<td>8:20</td>
+								<td>11:30</td>
+								<td></td>
+							</tr>
+							<tr>
+								<th>160327006</th>
+								<td>小红</td>
+								<td>8:20</td>
+								<td>11:30</td>
+								<td></td>
+							</tr>
+							<tr>
+								<th>160327007</th>
+								<td>赵华</td>
+								<td>8:20</td>
+								<td>11:30</td>
+								<td></td>
+							</tr>
+							<tr>
+								<th>160327008</th>
+								<td>哈哈</td>
+								<td>8:20</td>
+								<td>11:30</td>
+								<td></td>
+							</tr>
+							<tr>
+								<th>160327001</th>
+								<td>张三</td>
+								<td>8:20</td>
+								<td>11:30</td>
+								<td></td>
+							</tr>
+							<tr>
+								<th>160327002</th>
+								<td>李四</td>
+								<td>8:20</td>
+								<td>11:30</td>
+								<td></td>
+							</tr>
+							<tr>
+								<th>160327003</th>
+								<td>王五</td>
+								<td>8:20</td>
+								<td>11:30</td>
+								<td>缺勤</td>
+							</tr>
+							<tr>
+								<th>160327004</th>
+								<td>刘二</td>
+								<td>8:20</td>
+								<td>11:30</td>
+								<td></td>
+							</tr>
+							<tr>
+								<th>160327005</th>
+								<td>小花</td>
+								<td>8:20</td>
+								<td>11:30</td>
+								<td></td>
+							</tr>
+							<tr>
+								<th>160327006</th>
+								<td>小红</td>
+								<td>8:20</td>
+								<td>11:30</td>
+								<td></td>
+							</tr>
+							<tr>
+								<th>160327007</th>
+								<td>赵华</td>
+								<td>8:20</td>
+								<td>11:30</td>
+								<td></td>
+							</tr>
+							<tr>
+								<th>160327008</th>
+								<td>哈哈</td>
+								<td>8:20</td>
+								<td>11:30</td>
+								<td></td>
+							</tr>
+							<tr>
+								<th>160327001</th>
+								<td>张三</td>
+								<td>8:20</td>
+								<td>11:30</td>
+								<td></td>
+							</tr>
+							<tr>
+								<th>160327002</th>
+								<td>李四</td>
+								<td>8:20</td>
+								<td>11:30</td>
+								<td></td>
+							</tr>
+							<tr>
+								<th>160327003</th>
+								<td>王五</td>
+								<td>8:20</td>
+								<td>11:30</td>
+								<td>缺勤</td>
+							</tr>
+							<tr>
+								<th>160327004</th>
+								<td>刘二</td>
+								<td>8:20</td>
+								<td>11:30</td>
+								<td></td>
+							</tr>
+							<tr>
+								<th>160327005</th>
+								<td>小花</td>
+								<td>8:20</td>
+								<td>11:30</td>
+								<td></td>
+							</tr>
+							<tr>
+								<th>160327006</th>
+								<td>小红</td>
+								<td>8:20</td>
+								<td>11:30</td>
+								<td></td>
+							</tr>
+							<tr>
+								<th>160327007</th>
+								<td>赵华</td>
+								<td>8:20</td>
+								<td>11:30</td>
+								<td></td>
+							</tr>
+							<tr>
+								<th>160327008</th>
+								<td>哈哈</td>
+								<td>8:20</td>
+								<td>11:30</td>
+								<td></td>
+							</tr>
+
+
+
+							</tbody>
+						</table>
+
+					</div>
+
+					<script type="text/javascript">
+						// This JavaScript Will Replace Checkboxes in dropdown toggles
+						jQuery(document).ready(function($)
+						{
+							setTimeout(function()
+							{
+								$(".checkbox-row input").addClass('cbr');
+								cbr_replace();
+							}, 0);
+						});
+					</script>
+
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<!-- 添加数据 -->
+	<div class="row">
+		<div class="col-md-12">
+
+			<div class="panel panel-default">
+				<!--<div class="panel-heading">列表操作</div>-->
+				<div class="panel-body">
+
+					<button class="btn btn-white">修改</button>
+					<button class="btn btn-gray">导出</button>
+
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<script type="text/javascript">
+		function showAjaxModal()
+		{
+			jQuery('#modal-7').modal('show', {backdrop: 'static'});
+
+			jQuery.ajax({
+				url: "data/ajax-content.txt",
+				success: function(response)
+				{
+					jQuery('#modal-7 .modal-body').html(response);
+				}
+			});
+		}
+	</script>
+
+
+
+
+			<!-- Main Footer -->
+			<!-- Choose between footer styles: "footer-type-1" or "footer-type-2" -->
+			<!-- Add class "sticky" to  always stick the footer to the end of page (if page contents is small) -->
+			<!-- Or class "fixed" to  always fix the footer to the end of page -->
+			<footer class="main-footer sticky footer-type-1">
+				
+				<div class="footer-inner">
+				
+					<!-- Add your copyright text here -->
+					<div class="footer-text">
+						&copy; 2017-2020
+						<strong>工程实践</strong>
+						小组成员 ：李真骁 陈开河 张超 周杰
+					</div>
+					
+					
+					<!-- Go to Top Link, just add rel="go-top" to any link to add this functionality -->
+					<div class="go-up">
+					
+						<a href="#" rel="go-top">
+							<i class="fa-angle-up"></i>
+						</a>
+						
+					</div>
+					
+				</div>
+				
+			</footer>
+		</div>
+</div>
+
+
+
+
+<div class="modal fade" id="modal-6">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">请添加信息</h4>
+			</div>
+
+			<div class="modal-body">
+
+				<div class="row">
+					<div class="col-md-6">
+
+						<div class="form-group">
+							<label for="field-1" class="control-label">周几</label>
+
+							<input type="text" class="form-control" id="field-1" placeholder="">
+						</div>
+
+					</div>
+
+					<div class="col-md-6">
+
+						<div class="form-group">
+							<label for="field-2" class="control-label">课程名称</label>
+
+							<input type="text" class="form-control" id="field-2" placeholder="">
+						</div>
+
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-12">
+
+						<div class="form-group">
+							<label for="field-3" class="control-label">课时</label>
+
+							<input type="text" class="form-control" id="field-3" placeholder="">
+						</div>
+
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">
+
+						<div class="form-group">
+							<label for="field-4" class="control-label">开始时间</label>
+
+							<input type="text" class="form-control" id="field-4" placeholder="">
+						</div>
+
+					</div>
+
+					<div class="col-md-4">
+
+						<div class="form-group">
+							<label for="field-5" class="control-label">结束时间</label>
+
+							<input type="text" class="form-control" id="field-5" placeholder="">
+						</div>
+
+					</div>
+
+					<div class="col-md-4">
+
+						<div class="form-group">
+							<label for="field-6" class="control-label">地点</label>
+
+							<input type="text" class="form-control" id="field-6" placeholder="">
+						</div>
+
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-12">
+
+						<div class="form-group no-margin">
+							<label for="field-7" class="control-label">备注</label>
+
+							<textarea class="form-control autogrow" id="field-7" placeholder="哈哈哈哈哈"></textarea>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+
+			<div class="modal-footer">
+				<button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-info">Save changes</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+	<!-- Imported styles on this page -->
+	<link rel="stylesheet" href="assets/js/datatables/dataTables.bootstrap.css">
+
+	<!-- Bottom Scripts -->
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/TweenMax.min.js"></script>
+	<script src="assets/js/resizeable.js"></script>
+	<script src="assets/js/joinable.js"></script>
+	<script src="assets/js/xenon-api.js"></script>
+	<script src="assets/js/xenon-toggles.js"></script>
+	<script src="assets/js/datatables/js/jquery.dataTables.min.js"></script>
+
+
+	<!-- Imported scripts on this page -->
+	<script src="assets/js/datatables/dataTables.bootstrap.js"></script>
+	<script src="assets/js/datatables/yadcf/jquery.dataTables.yadcf.js"></script>
+	<script src="assets/js/datatables/tabletools/dataTables.tableTools.min.js"></script>
+
+
+	<!-- JavaScripts initializations and stuff -->
+	<script src="assets/js/xenon-custom.js"></script>
+
+</body>
+</html>
