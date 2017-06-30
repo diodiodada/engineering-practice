@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Xenon Boostrap Admin Panel" />
+    <meta name="author" content="" />
+
+    <title>主页 - 考勤管理系统</title>
+
+    <link rel="stylesheet" href="http://fonts.useso.com/css?family=Arimo:400,700,400italic">
+    <link rel="stylesheet" href="assets/css/fonts/linecons/css/linecons.css">
+    <link rel="stylesheet" href="assets/css/fonts/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/xenon-core.css">
+    <link rel="stylesheet" href="assets/css/xenon-forms.css">
+    <link rel="stylesheet" href="assets/css/xenon-components.css">
+    <link rel="stylesheet" href="assets/css/xenon-skins.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <script src="assets/js/jquery-1.11.1.min.js"></script>
+
+
+</head>
+
+<body class="page-body">
+
+    <div class="page-container">
+
+        <!--左侧边栏-->
+        <div class="sidebar-menu toggle-others fixed">
+
+            <div class="sidebar-menu-inner">
+
+                <!-- logo -->
+                <header class="logo-env">
+                    <div class="logo">
+                        <a href="3-home.html" class="logo-expanded">
+                            <img src="assets/images/timg.jpg" width="80" alt="" />
+                        </a>
+                    </div>
+
+                </header>
+
+                <!--左侧列表		-->
+                <ul id="main-menu" class="main-menu">
+                    <!-- add class "multiple-expanded" to allow multiple submenus to open -->
+                    <!-- class "auto-inherit-active-class" will automatically add "active" class for parent elements who are marked already with class "active" -->
+                    <li>
+                        <a href="dashboard-1.html">
+                            <i class="linecons-cog"></i>
+                            <span class="title">用户管理</span>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="4-usertable.html">
+                                    <span class="title">添加用户</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="4-usertable.html">
+                                    <span class="title">删除用户</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="4-usertable.html">
+                                    <span class="title">编辑用户</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="4-usertable.html">
+                                    <span class="title">查看用户列表</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="layout-variants.html">
+                            <i class="linecons-desktop"></i>
+                            <span class="title">角色管理</span>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="5-addpower.html">
+                                    <span class="title">查看所有角色</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="5-addpower.html">
+                                    <span class="title">增加角色</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="5-addpower.html">
+                                    <span class="title">删除角色</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="5-addpower.html">
+                                    <span class="title">编辑角色</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="ui-panels.html">
+                            <i class="linecons-note"></i>
+                            <span class="title">查看考勤记录</span>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="ui-panels.html">
+                                    <span class="title">准时学生列表</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="ui-buttons.html">
+                                    <span class="title">迟到学生列表</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="ui-tabs-accordions.html">
+                                    <span class="title">请假学生列表</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="ui-modals.html">
+                                    <span class="title">所有考勤记录</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="ui-widgets.html">
+                            <i class="linecons-star"></i>
+                            <span class="title">查看个人信息</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailbox-main.html">
+                            <i class="linecons-mail"></i>
+                            <span class="title">消息提醒</span>
+                            <span class="label label-success pull-right">5</span>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="mailbox-main.html">
+                                    <span class="title">Inbox</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailbox-compose.html">
+                                    <span class="title">Compose Message</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailbox-message.html">
+                                    <span class="title">View Message</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="tables-basic.html">
+                            <i class="linecons-database"></i>
+                            <span class="title">关于本系统</span>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="tables-basic.html">
+                                    <span class="title">Basic Tables</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tables-responsive.html">
+                                    <span class="title">Responsive Table</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tables-datatables.html">
+                                    <span class="title">Data Tables</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="forms-native.html">
+                            <i class="linecons-params"></i>
+                            <span class="title">退出</span>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="forms-native.html">
+                                    <span class="title">Native Elements</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="forms-advanced.html">
+                                    <span class="title">Advanced Plugins</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="forms-wizard.html">
+                                    <span class="title">Form Wizard</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="forms-validation.html">
+                                    <span class="title">Form Validation</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="forms-input-masks.html">
+                                    <span class="title">Input Masks</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="forms-file-upload.html">
+                                    <span class="title">File Upload</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="forms-editors.html">
+                                    <span class="title">Editors</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="forms-sliders.html">
+                                    <span class="title">Sliders</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="extra-gallery.html">
+                            <i class="linecons-beaker"></i>
+                            <span class="title">反馈建议</span>
+                            <span class="label label-purple pull-right hidden-collapsed">New Items</span>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="extra-icons-fontawesome.html">
+                                    <span class="title">Icons</span>
+                                    <span class="label label-warning pull-right">4</span>
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="extra-icons-fontawesome.html">
+                                            <span class="title">Font Awesome</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="extra-icons-linecons.html">
+                                            <span class="title">Linecons</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="extra-icons-elusive.html">
+                                            <span class="title">Elusive</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="extra-icons-meteocons.html">
+                                            <span class="title">Meteocons</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="extra-maps-google.html">
+                                    <span class="title">Maps</span>
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="extra-maps-google.html">
+                                            <span class="title">Google Maps</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="extra-maps-advanced.html">
+                                            <span class="title">Advanced Map</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="extra-maps-vector.html">
+                                            <span class="title">Vector Map</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="extra-gallery.html">
+                                    <span class="title">Gallery</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="extra-calendar.html">
+                                    <span class="title">Calendar</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="extra-profile.html">
+                                    <span class="title">Profile</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="1-login.html">
+                                    <span class="title">Login</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="extra-lockscreen.html">
+                                    <span class="title">Lockscreen</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="extra-login-light.html">
+                                    <span class="title">Login Light</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="extra-timeline.html">
+                                    <span class="title">Timeline</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="extra-timeline-center.html">
+                                    <span class="title">Timeline Centerd</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="extra-notes.html">
+                                    <span class="title">Notes</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="extra-image-crop.html">
+                                    <span class="title">Image Crop</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="extra-portlets.html">
+                                    <span class="title">Portlets</span>
+                                </a>
+                            </li>
+                            <li class="active">
+                                <a href="3-home.html">
+                                    <span class="title">Blank Page</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="extra-search.html">
+                                    <span class="title">Search</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="extra-invoice.html">
+                                    <span class="title">Invoice</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="extra-not-found.html">
+                                    <span class="title">404 Page</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="extra-tocify.html">
+                                    <span class="title">Tocify</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="extra-loader.html">
+                                    <span class="title">Loading Progress</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="extra-page-loading-ol.html">
+                                    <span class="title">Page Loading Overlay</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="extra-notifications.html">
+                                    <span class="title">Notifications</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="extra-nestable-lists.html">
+                                    <span class="title">Nestable Lists</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="extra-scrollable.html">
+                                    <span class="title">Scrollable</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <!--右侧主界面-->
+        <div class="main-content">
+
+            <!-- 第一行信息-->
+            <nav class="navbar user-info-navbar" role="navigation">
+
+                <!-- Right links for user info navbar -->
+                <ul class="user-info-menu right-links list-inline list-unstyled">
+
+                    <!--搜索按钮-->
+                    <li class="search-form"><!-- You can add "always-visible" to show make the search input visible -->
+
+                        <form method="get" action="extra-search.html">
+                            <input type="text" name="s" class="form-control search-field" placeholder="Type to search..." />
+
+                            <button type="submit" class="btn btn-link">
+                                <i class="linecons-search"></i>
+                            </button>
+                        </form>
+
+                    </li>
+
+                    <!--个人信息-->
+                    <li class="dropdown user-profile">
+
+                        <a href="#" data-toggle="dropdown">
+                            <img src="assets/images/user-4.png" alt="user-image" class="img-circle img-inline userpic-32" width="28" />
+                            <span>
+                                    李老师
+                                    <i class="fa-angle-down"></i>
+                                </span>
+                        </a>
+
+                        <!--用户下拉菜单-->
+                        <ul class="dropdown-menu user-profile-menu list-unstyled">
+                            <li>
+                                <a href="#edit-profile">
+                                    <i class="fa-edit"></i>
+                                    编辑
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#settings">
+                                    <i class="fa-wrench"></i>
+                                    设置
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#profile">
+                                    <i class="fa-user"></i>
+                                    个人信息
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#help">
+                                    <i class="fa-info"></i>
+                                    帮助
+                                </a>
+                            </li>
+                            <li class="last">
+                                <a href="extra-lockscreen.html">
+                                    <i class="fa-lock"></i>
+                                    退出
+                                </a>
+                            </li>
+                        </ul>
+
+                    </li>
+
+                    <!--聊天图标-->
+                    <li>
+                        <a href="#" data-toggle="chat">
+                            <i class="fa-comments-o"></i>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+
+
+            <div class="row">
+                <div class="col-md-12">
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            角色列表
+                        </div>
+
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th width="30%">角色名</th>
+                                <th>编辑</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="middle-align">教师</td>
+                                <td>
+                                    <a href="javascript:;" onclick="jQuery('#modal-1').modal('show', {backdrop: 'fade'});" class="btn btn-primary btn-single btn-sm">编辑</a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="middle-align">学生</td>
+                                <td>
+                                    <a href="javascript:;" onclick="jQuery('#modal-2').modal('show');" class="btn btn-primary btn-single btn-sm">编辑</a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="middle-align">管理员1</td>
+                                <td>
+                                    <a href="javascript:;" onclick="jQuery('#modal-3').modal('show');" class="btn btn-primary btn-single btn-sm">编辑</a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="middle-align">管理员2</td>
+                                <td>
+                                    <a href="javascript:;" onclick="jQuery('#modal-4').modal('show', {backdrop: 'static'});" class="btn btn-primary btn-single btn-sm">编辑</a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="middle-align">管理员3</td>
+                                <td>
+                                    <a href="javascript:;" onclick="jQuery('#modal-5').modal('show', {backdrop: 'fade'});" class="btn btn-primary btn-single btn-sm">编辑</a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="middle-align">管理员4</td>
+                                <td>
+                                    <a href="javascript:;" onclick="jQuery('#modal-6').modal('show', {backdrop: 'static'});" class="btn btn-primary btn-single btn-sm">编辑</a>
+                                </td>
+                            </tr>
+
+
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!--页脚信息-->
+            <footer class="main-footer sticky footer-type-1">
+
+                <div class="footer-inner">
+
+                    <!-- 版权信息 -->
+                    <div class="footer-text">
+                        &copy; 2017
+                        <strong>工程实践</strong>
+                        小组成员 ：李真骁 陈开河 张超 周杰
+                    </div>
+
+                    <!-- 回到顶部 -->
+                    <div class="go-up">
+                        <a href="#" rel="go-top">
+                            <i class="fa-angle-up"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </footer>
+
+        </div>
+
+    </div>
+
+    <!-- Modal 1 (Basic)-->
+    <div class="modal fade" id="modal-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Basic Modal</h4>
+                </div>
+
+                <div class="modal-body">
+                    Hello I am a Modal!
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-info">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 (Custom Width)-->
+    <div class="modal fade custom-width" id="modal-2">
+        <div class="modal-dialog" style="width: 60%;">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Custom Width Modal</h4>
+                </div>
+
+                <div class="modal-body">
+                    Any type of width can be applied.
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-info">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 (Custom Width)-->
+    <div class="modal fade custom-width" id="modal-3">
+        <div class="modal-dialog" style="width: 96%">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Full width</h4>
+                </div>
+
+                <div class="modal-body">
+
+                    Its about 100%
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-info">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4 (Confirm)-->
+    <div class="modal fade" id="modal-4" data-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h4 class="modal-title">Confirm Modal</h4>
+                </div>
+
+                <div class="modal-body">
+
+                    You can close this modal when you click on button only!
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Continue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5 (Long Modal)-->
+    <div class="modal fade" id="modal-5">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Long Height Modal</h4>
+                </div>
+
+                <div class="modal-body">
+
+                    <img src="assets/images/eiffel.jpg" alt="" class="img-responsive" />
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-info">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 6 (Long Modal)-->
+    <div class="modal fade" id="modal-6">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Modal Content is Responsive</h4>
+                </div>
+
+                <div class="modal-body">
+
+                    <div class="row">
+                        <div class="col-md-6">
+
+                            <div class="form-group">
+                                <label for="field-1" class="control-label">Name</label>
+
+                                <input type="text" class="form-control" id="field-1" placeholder="John">
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-6">
+
+                            <div class="form-group">
+                                <label for="field-2" class="control-label">Surname</label>
+
+                                <input type="text" class="form-control" id="field-2" placeholder="Doe">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <div class="form-group">
+                                <label for="field-3" class="control-label">Address</label>
+
+                                <input type="text" class="form-control" id="field-3" placeholder="Address">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+
+                            <div class="form-group">
+                                <label for="field-4" class="control-label">City</label>
+
+                                <input type="text" class="form-control" id="field-4" placeholder="Boston">
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-4">
+
+                            <div class="form-group">
+                                <label for="field-5" class="control-label">Country</label>
+
+                                <input type="text" class="form-control" id="field-5" placeholder="United States">
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-4">
+
+                            <div class="form-group">
+                                <label for="field-6" class="control-label">Zip</label>
+
+                                <input type="text" class="form-control" id="field-6" placeholder="123456">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <div class="form-group no-margin">
+                                <label for="field-7" class="control-label">Personal Info</label>
+
+                                <textarea class="form-control autogrow" id="field-7" placeholder="Write something about yourself"></textarea>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-info">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 7 (Ajax Modal)-->
+    <div class="modal fade" id="modal-7">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Dynamic Content</h4>
+                </div>
+
+                <div class="modal-body">
+
+                    Content is loading...
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-info">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Scripts -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/resizeable.js"></script>
+    <script src="assets/js/joinable.js"></script>
+    <script src="assets/js/xenon-api.js"></script>
+    <script src="assets/js/xenon-toggles.js"></script>
+
+
+    <!-- JavaScripts initializations and stuff -->
+    <script src="assets/js/xenon-custom.js"></script>
+
+</body>
+</html>
