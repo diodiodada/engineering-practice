@@ -1,0 +1,23 @@
+<ion-view view-title="{{title}}" >
+
+  <form name="shopEditForm">
+
+    <ion-content>
+
+      <div class="list list-inset">
+        <label class="item item-input">
+          <input type="text" placeholder="{{title}}"  ng-model="inputData.value">
+        </label>
+      </div>
+
+      <div class="row" >
+        <div class="col">
+          <button type="submit" class="button button-energized button-full " ng-click="save()" >保存</button>
+        </div>
+      </div>
+
+    </ion-content>
+
+
+  </form>
+</ion-view>

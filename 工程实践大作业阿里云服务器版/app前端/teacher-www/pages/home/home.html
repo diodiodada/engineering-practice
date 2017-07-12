@@ -1,0 +1,35 @@
+<ion-view view-title="首页">
+  <ion-content class="stable-bg has-footer" scroll="false">
+
+    <img class="full-image image-title " src="pages/home/img/home.png" style="height:40% ; width:100%;">
+
+    <div class="row stable-bg">
+      <div class="col">
+        <h6>您好</h6>
+        <p>{{name}}</p>
+      </div>
+      <div class="col">
+        <h6>今天是</h6>
+        <p>{{date}}</p>
+      </div>
+      <div class="col">
+        <h6>用户类型</h6>
+        <p>{{type}}</p>
+      </div>
+    </div>
+
+    <div class="row light-bg quick-actions row-no-padding">
+      <a class="col col-center tab-item quick-action-item" href="#" ui-sref="app.current"><i class="icon ion-compose positive" style="font-size:30px"></i>出勤查看</a>
+      <a class="col col-center tab-item quick-action-item" href="#" ui-sref="app.history"><i class="icon ion-android-bulb energized"style="font-size:30px"></i>历史出勤</a>
+    </div>
+    <div class="row light-bg quick-actions row-no-padding">
+      <a class="col col-center tab-item quick-action-item" href="#" ui-sref="app.leave_query"><i class="icon ion-medkit balanced"style="font-size:30px"></i>请假查询</a>
+      <a class="col col-center tab-item quick-action-item" href="#" ui-sref="app.course_plan"><i class="icon ion-clipboard royal"style="font-size:30px"></i>教学计划</a>
+    </div>
+
+
+  </ion-content>
+
+  <company-directive bottom="0px"></company-directive>
+
+</ion-view>

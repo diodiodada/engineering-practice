@@ -1,0 +1,46 @@
+<ion-view view-title="店铺信息">
+  <ion-content class="stable-bg">
+
+    <div class="list list-inset">
+      <div class="item item-icon-right" ng-click="edit('店铺名称')">
+        店铺名称<i class="icon ion-ios-arrow-forward"></i>
+        <span class="item-note">{{shopData.Name}}</span>
+      </div>
+      <div class="item item-icon-right" ng-click="edit('店铺简称')">
+        店铺简称<i class="icon ion-ios-arrow-forward"></i>
+        <span class="item-note">{{shopData.SN}}</span>
+      </div>
+      <div class="item item-icon-right">
+        注册时间
+        <span class="item-note">{{shopData.CreateDate}}</span>
+      </div>
+      <div class="item ">
+        手机号码
+        <span class="item-note">{{shopData.Phone}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      </div>
+    </div>
+
+    <div class="list list-inset">
+      <div class="item item-icon-right">
+        电子邮件
+        <span class="item-note">{{shopData.Email}}</span>
+      </div>
+      <div class="item item-icon-right" ng-click="edit('店主姓名')">
+        店主姓名<i class="icon ion-ios-arrow-forward"></i>
+        <span class="item-note">{{shopData.Boss}}</span>
+      </div>
+      <div class="item item-icon-right" ng-click="edit('店铺电话')">
+        店铺电话<i class="icon ion-ios-arrow-forward"></i>
+        <span class="item-note">{{shopData.ShopPhone}}</span>
+      </div>
+      <div class="item item-icon-right" ng-click="edit('行业类型')">
+        行业类型<i class="icon ion-ios-arrow-forward"></i>
+        <span class="item-note">{{shopData.Category}}</span>
+      </div>
+    </div>
+
+  </ion-content>
+
+  <company-directive bottom="0px"></company-directive>
+
+</ion-view>

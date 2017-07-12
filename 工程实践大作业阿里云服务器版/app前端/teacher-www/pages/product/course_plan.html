@@ -1,0 +1,20 @@
+<ion-view view-title="教学计划">
+  <ion-content class="has-footer">
+    <div class="list">
+      <label class="item item-input ">
+        <span class="input-label"><span class="positive">您这学期一共要教授&nbsp&nbsp<span>{{length}}</span>&nbsp&nbsp门课</span></span>
+      </label>
+
+
+
+      <li class="item stable-bg" style="border-right: none;" ng-repeat="item in course">
+        {{item}}
+      </li>
+
+    </div>
+
+  </ion-content>
+
+
+
+</ion-view>

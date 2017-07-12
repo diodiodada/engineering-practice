@@ -1,0 +1,51 @@
+<ion-view view-title="商品详情">
+
+  <ion-nav-buttons side="right">
+    <button class="button button-icon button-clear ion-ios-more" ng-click="showMenu($event)"></button>
+  </ion-nav-buttons>
+
+  <ion-content class="stable-bg">
+
+    <img class="full-image image-title " src="pages/product/img/productdetail.jpg">
+
+    <div class="list list-inset">
+      <div class="item " >
+        名称
+        <span class="item-note">{{item.name}}</span>
+      </div>
+
+      <div class="item ">
+        售价
+        <span class="item-note">{{item.price}}</span>
+      </div>
+
+      <div class="item ">
+        库存
+        <span class="item-note">{{item.stock}}</span>
+      </div>
+
+      <div class="item ">
+        进价
+        <span class="item-note"></span>
+        <button class="button button-outline button-energized button-small item-note" ng-click="showPropmt()">查看进价</button>
+      </div>
+
+      <div class="item ">
+        二维码
+        <span class="item-note">{{item.barcode}}</span>
+      </div>
+
+      <div class="item ">
+        分享
+        <span class="item-note"></span>
+        <button class="button button-outline button-energized button-small item-note" ng-click="showModel()">分享</button>
+      </div>
+
+
+    </div>
+
+  </ion-content>
+
+</ion-view>
+
+

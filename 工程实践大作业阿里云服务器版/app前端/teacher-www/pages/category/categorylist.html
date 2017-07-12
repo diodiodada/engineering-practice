@@ -1,0 +1,51 @@
+<ion-view view-title="课程选择">
+
+  <ion-nav-buttons side="right">
+    <a class="button button-icon button-clear ion-ios-plus-empty" href="#/app/categoryadd/0/"></a>
+  </ion-nav-buttons>
+
+  <ion-content style="width:40%;">
+    <ul class="list">
+      <li class="item stable-bg" style="border-right: none;"
+          ng-repeat="item in categories"
+          ng-click="selectCategory(item.ID)"
+          ng-class="{'item-active':item.ID === activeCategory.ID}">
+        {{item.Name}}
+      </li>
+    </ul>
+  </ion-content>
+
+  <ion-content style="width:60%; margin-left: 40%;">
+    <ul class="list">
+      <li class="item light-bg" style="border-right: none;"
+          ng-repeat="item in sections"
+          ng-click="selectSection(item)">
+        {{item.Name}}
+      </li>
+      <button class="button button-positive button-clear icon-left ion-plus-circled margin-left" ng-click="gotoAddCategory()">
+        新增小分类
+      </button>
+    </ul>
+  </ion-content>
+
+  <!--<div class=" bar bar-footer row-center" style="margin-left: 40%; width: 60%">-->
+    <!--<span ng-if="sections.length==0">目前没有小分类</span>-->
+    <!--<span ng-if="sections.length>0">共 {{sections.length}} 种商品分类</span>-->
+    <!--<button class="button stable-border button-icon ion-android-more-horizontal"-->
+            <!--style="position: absolute;top:5px;right:5px;bottom:5px;" ng-click="showActionSheet()">-->
+    <!--</button>-->
+  <!--</div>-->
+
+</ion-view>
+
+
+
+
+
+
+
+
+
+
+
+

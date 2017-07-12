@@ -1,0 +1,25 @@
+<ion-view view-title="操作说明">
+  <ion-nav-buttons side="left">
+    <button class="button button-clear icon-left ion-ios-arrow-back" ng-click="goBack()">
+      &nbsp;&nbsp;首页
+    </button>
+  </ion-nav-buttons>
+
+
+  <ion-content class="stable-bg">
+
+
+
+    <div class="list list-inset">
+      <div style="border: #DCDCDC 1px solid; overflow: visible;  " cols=70 rows=24>
+         <p ng-include="'pages/menu/operator.txt'"></p></div>
+
+      <br>
+    </div>
+
+  </ion-content>
+
+  <company-directive bottom="0px"></company-directive>
+
+
+</ion-view>

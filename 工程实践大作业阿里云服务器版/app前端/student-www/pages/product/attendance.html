@@ -1,0 +1,47 @@
+<ion-view view-title="出勤查询">
+
+  <ion-content class="has-footer">
+    <div class="list">
+
+      <label class="item item-input ">
+        <span class="input-label"><span class="positive">您一共签到了{{length}}次</span></span>
+        <input type="text" ng-model="product.Name">
+      </label>
+
+
+
+
+      <diva class=" table-c" >
+
+        <table width="100%"
+               border="1" cellspacing="0" cellpadding="5" bordercolor="silver" align="center">
+          <tr width="100%" class="tr1">
+            <td >学号</td>
+            <td >时间</td>
+            <td >课程</td>
+            <td >GPS</td>
+            <td >标识</td>
+            <td >状态</td>
+          </tr>
+
+          <tr width="100%" ng-repeat="item in array">
+
+            <td  ng-repeat="item2 in item">
+              {{item2}}
+            </td>
+
+          </tr>
+
+
+
+        </table>
+
+      </diva>
+
+    </div>
+
+  </ion-content>
+
+
+
+</ion-view>

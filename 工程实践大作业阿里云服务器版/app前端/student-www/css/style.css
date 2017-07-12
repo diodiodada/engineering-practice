@@ -1,0 +1,104 @@
+/* Empty. Add your own CSS if you like */
+
+.margin-left{
+  margin-left: 10px;
+}
+.margin-right{
+  margin-right: 10px;
+}
+.margin-top{
+  margin-top: 10px;
+}
+.margin-bottom{
+  margin-bottom: 10px;
+}
+
+.menu-side li{
+  border-left: none;
+}
+
+.menu-side li i{
+  font-size:medium!important;
+}
+
+.image-title{
+  height: 33%;
+}
+
+.col-border{
+  border: solid 1px #ececec;
+  border-right-style: none;
+  border-bottom-style: none;
+}
+
+.col-border:last-child{
+    border-right:solid 1px #ececec;
+}
+
+.row:last-child .col-border{
+  border-bottom:solid 1px #ececec;
+}
+
+.quick-actions{
+    display: table;
+}
+
+.quick-action-item{
+  width:40vw;
+  height: 40vw;
+  display:table-cell;
+  vertical-align: middle;
+}
+
+.item-active{
+  background-color: #fff;
+  border-left-color: #FF6A3C;
+  border-left-width: 4px;
+  border-left-style: solid;
+}
+.table-c table{border-right:1px solid #000;border-bottom:1px solid #000;font-size:20px;height:40px;line-height: 40px;text-align: center;}
+.table-c table td{border-left:1px solid #000;border-top:1px solid #000;font-size: 16px;}
+
+.course{
+  margin: 0 auto;
+}
+.course p{
+  width:350px;
+  height: 40px;
+  /*border:solid 1px #000;*/
+line-height: 40px;
+text-align: center;}
+.course select {
+    font-size: 20px;
+    width:200px ;
+    height: 35px;
+}
+
+.course p .select2{
+     margin-top: 20px;
+}
+.btn1{
+  width:100px;
+  height: 200px;
+  border: solid 1px #000;
+
+}
+.btn{
+  width:100px;
+  height: 40px;
+  background: #0c60ee;
+  color: #fff;
+  margin-left: 160px;
+}
+.table-c table .tr1{
+     background: #66CCFF;
+}
+
+.use_info p{
+    margin-left: 60px;
+}
+.use_info input{
+  width:300px;
+  height: 30px;
+  border:1px solid #000;
+}

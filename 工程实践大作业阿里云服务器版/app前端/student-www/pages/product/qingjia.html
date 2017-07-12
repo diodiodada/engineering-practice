@@ -1,0 +1,41 @@
+<ion-view view-title="请假">
+  <form name="myForm" novalidate >
+    <ion-content >
+
+      <!--<div class="text-align:center"><h1>请假申请</h1></div>-->
+
+      <div class="list list-inset ">
+        <label>
+          <span class="input-label">请假课程</span>
+          <label class="item item-input" style="margin-bottom: 20px;">
+            <input  type="text" ng-model="qingjia.class" required>
+          </label>
+        </label>
+
+        <label>
+          <span class="input-label">请假时间</span>
+          <label class="item item-input" style="margin-bottom: 20px;">
+            <input type="text" ng-model="qingjia.time"  required>
+          </label>
+        </label>
+
+        <label>
+          <span class="input-label">请假原因</span>
+          <label class="item item-input">
+            <input  type="text" ng-model="qingjia.reason" required>
+          </label>
+        </label>
+      </div>
+
+
+      <div class="row padding">
+        <button class="button button-positive button-block" ng-click="save()" >提交申请</button>
+      </div>
+
+
+
+    </ion-content>
+
+  </form>
+</ion-view>
+

@@ -1,0 +1,37 @@
+<ion-view view-title="签到">
+  <ion-content class="has-footer">
+    <div class="list">
+
+
+      <label class="item item-input ">
+        <span class="input-label">课程名称<span class="energized">*</span></span>
+        <input type="text" placeholder="输入课程名称" ng-model="checkin.name">
+      </label>
+
+      <label class="item item-input " >
+          <span class="input-label">教室编号<span class="energized">*</span></span>
+          <input type="text" placeholder="输入教室编号" ng-model="checkin.roomnumber">
+        </label>
+
+
+      <label class="item item-input ">
+        <span class="input-label">座位编号<span class="energized">*</span></span>
+        <input type="text" placeholder="输入座位编号" ng-model="checkin.seatnumber">
+      </label>
+    </div>
+
+
+      <div class="bar  bar-positive">
+        <div class="button-bar">
+          <button class="button button-clear light" ng-click="save()" >签到</button>
+        </div>
+      </div>
+
+
+
+
+  </ion-content>
+
+
+
+</ion-view>

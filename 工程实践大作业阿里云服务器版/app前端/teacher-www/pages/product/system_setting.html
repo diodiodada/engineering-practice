@@ -1,0 +1,142 @@
+<ion-view view-title="系统设置">
+  <ion-content class="has-footer">
+    <!--<div class="list">
+
+      &lt;!&ndash;<div class="item  item-icon-right stable-bg row-center">&ndash;&gt;
+      &lt;!&ndash;<img id="myImage" style="max-width: 80px; max-height: 80px;"
+           src="pages/product/img/add_picture.png" ng-click="showActionSheet()" ng-if="product.Images.length < 3">
+      <img style="max-width: 80px; max-height: 80px;" ng-repeat="item in product.Images" ng-src="{{item}}" >
+      <i class="icon"><h6>上传照片</h6></i>&ndash;&gt;
+
+      &lt;!&ndash; </div>&ndash;&gt;
+      <diva class="use_info"  >
+        <form name="signUpForm" novalidate ng-submit="save()">
+          &lt;!&ndash;<input name="username" type="text" required ng-model="user.username" ng-minlength="6" ng-maxlength="24" username-unique url="username.json">&ndash;&gt;
+          <input name="username" type="text" required ng-model="user.username" ng-minlength="6" ng-maxlength="24" username-unique="username.json">
+
+          <br>
+          <input name="age" type="number" min="18" max="60" ng-model="user.age">
+          <br>
+          <input name="phone" type="text" ng-model="user.phone" ng-pattern="/^1[3|5|7|8]\d{9}$/">
+
+          <br>
+          <input name="email" type="email" ng-model="user.email">
+
+          <br>
+          <button type="submit">保存</button>
+        </form>
+      </diva>-->
+
+    <!--<label class="item item-input ">
+      <span class="input-label">名称<span class="energized">*</span></span>
+      <input type="text" ng-model="product.Name">
+    </label>
+
+    <label class="item item-input item-icon-right" ui-sref="app.category">
+      <span class="input-label">分类<span class="energized">*</span></span>
+      <input type="text" ng-model="product.Category.Name">
+      <i class="icon ion-ios-arrow-forward menu-item-icon"  ></i>
+    </label>
+
+  </div>-->
+
+
+    <div class="row row-center row-no-padding padding-left padding-right" >
+      <div class="col col-66">
+        <h4 class="positive">考勤系统</h4>
+        <h6 class="positive">福大欧米伽小分队</h6>
+      </div>
+      <div class="col col-34 text-right">
+        <span class="energized-bg light">&nbsp;专硕1班&nbsp;</span>
+      </div>
+    </div>
+
+    <ul class="list menu-side ">
+
+      <li class="item item-icon-left item-icon-right positive-bg stable" menu-close>
+        <i class="icon ion-social-usd"></i>
+        修改密码
+        <i class="icon ion-ios-arrow-right"></i>
+      </li>
+
+      <li class="item item-icon-left item-icon-right positive-bg stable" menu-close>
+        <i class="icon ion-android-desktop"></i>
+        关于我们
+        <i class="icon ion-ios-arrow-right"></i>
+      </li>
+
+      <li class="item item-icon-left item-icon-right positive-bg stable" menu-close>
+        <i class="icon ion-android-cart"></i>
+        联系客服
+        <i class="icon ion-ios-arrow-right"></i>
+      </li>
+
+      <li class="item item-icon-left item-icon-right positive-bg stable" menu-close>
+        <i class="icon ion-android-chat"></i>
+        欢迎界面
+        <i class="icon ion-ios-arrow-right"></i>
+      </li>
+
+
+
+      <li class="item item-icon-left item-icon-right positive-bg stable" menu-close>
+        <i class="icon ion-ios-search"></i>
+        版本号    <span>1.0.1</span>
+        <i class="icon ion-ios-arrow-right"></i>
+      </li>
+      <li class="item item-icon-left item-icon-right positive-bg stable" menu-close>
+
+        <p align="center" style="color: #ffffff" > @2017</p>
+      </li>
+    </ul>
+
+
+    <!--<expander-directive>
+
+      <div class="list">
+
+        <label class="item item-input">
+          <span class="input-label">售价<span class="energized">*</span></span>
+          <input type="number" placeholder="输入商品售价">
+        </label>
+
+        <label class="item item-input">
+          <span class="input-label">进价</span>
+          <input type="text" placeholder="输入商品进价">
+        </label>
+
+        <label class="item item-input">
+          <span class="input-label">库存</span>
+          <input type="text" placeholder="输入商品库存">
+        </label>
+
+        <label class="item item-input">
+          <span class="input-label">规格</span>
+          <input type="text" placeholder="规格 型号 尺码">
+        </label>
+
+        <label class="item item-input">
+          <span class="input-label">备注</span>
+          <input type="text" placeholder="输入商品备注">
+        </label>
+
+        <label class="item item-input item-icon-right" ng-click="selectSupplier()">
+          <span class="input-label">供应商<span class="energized">*</span></span>
+          <span >{{product.SupplierName}}</span>
+          <i class="icon ion-ios-arrow-forward menu-item-icon" ></i>
+        </label>
+
+      </div>
+
+    </expander-directive>
+-->
+  </ion-content>
+
+  <div class="bar bar-footer bar-energized">
+    <div class="button-bar">
+      <button class="button button-clear light" ng-click="save()" >完成</button>
+      <button class="button button-clear light" ng-click="goBack()">返回上一层</button>
+    </div>
+  </div>
+
+</ion-view>

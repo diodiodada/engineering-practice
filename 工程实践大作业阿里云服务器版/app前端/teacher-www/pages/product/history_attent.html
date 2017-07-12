@@ -1,0 +1,58 @@
+<ion-view view-title="历史出勤">
+  <ion-content class="has-footer">
+
+    <label class="item item-input ">
+      <span class="input-label"><span class="positive">记录数量：<span>{{length}}</span></span></span>
+    </label>
+
+    <label class="item item-input ">
+      <span class="input-label">课程名称<span class="energized">*</span></span>
+      <input type="text" placeholder="输入课程名称" ng-model="a.classname" >
+    </label>
+
+    <label class="item item-input " >
+      <span class="input-label">学生学号<span class="energized">*</span></span>
+      <input type="text" placeholder="输入学生学号" ng-model="a.studentNumber">
+    </label>
+    <br>
+    <center>
+      <button   class="button button-positive" ng-click="inquirybycourse()">按课程查询</button>
+      <button   class="button button-positive" ng-click="inquirybystunum()">按学号查询</button>
+
+    </center>
+
+    <br/>
+
+    <diva class=" table-c" >
+
+      <table width="100%"
+             border="1" cellspacing="0" cellpadding="5" bordercolor="silver" align="center">
+        <tr width="100%" class="tr1">
+          <td >学号</td>
+          <td >时间</td>
+          <td >课程</td>
+          <td >GPS</td>
+          <td >标识</td>
+          <td >状态</td>
+        </tr>
+
+        <tr width="100%" ng-repeat="item in array">
+
+          <td  ng-repeat="item2 in item">
+            {{item2}}
+          </td>
+
+        </tr>
+
+
+
+      </table>
+
+    </diva>
+
+  </ion-content>
+
+
+
+</ion-view>
+

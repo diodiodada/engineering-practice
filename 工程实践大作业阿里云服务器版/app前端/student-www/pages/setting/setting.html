@@ -1,0 +1,48 @@
+<ion-view view-title="系统设置">
+
+  <ion-nav-buttons side="left">
+    <button class="button button-clear icon-left ion-ios-arrow-back" ng-click="goBack()">
+      &nbsp;&nbsp;首页
+    </button>
+  </ion-nav-buttons>
+
+  <ion-content class="stable-bg">
+
+    <div class="list list-inset">
+      <a class="item item-icon-right" ui-sref="app.changepassword">
+        修改密码<i class="icon ion-ios-arrow-forward"></i>
+      </a>
+    </div>
+
+
+    <div class="list list-inset">
+      <a class="item item-icon-right" ui-sref="app.about">
+        关于我们<i class="icon ion-ios-arrow-forward"></i>
+      </a>
+      <div class="item item">
+        联系我们
+        <span class="item-note positive">福州大学计算机技术</span>
+      </div>
+      <div class="item item-icon-right" ng-click="welcome()">
+        去欢迎页<i class="icon ion-ios-arrow-forward"></i>
+      </div>
+      <div class="item ">
+        版本号
+        <span class="item-note positive" >1.0.0</span>
+      </div>
+    </div>
+
+    <div class="list list-inset">
+      <a class="item item-icon-right" ng-click="logout()">
+      安全退出<i class="icon ion-ios-arrow-forward"></i>
+      </a>
+    </div>
+  </ion-content>
+
+  <company-directive bottom="0px"></company-directive>
+
+
+</ion-view>
+
+
+

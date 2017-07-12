@@ -1,0 +1,51 @@
+<ion-view view-title="用户信息">
+  <ion-nav-buttons side="left">
+    <button class="button button-clear icon-left ion-ios-arrow-back" ng-click="goBack()">
+      &nbsp;&nbsp;首页
+    </button>
+  </ion-nav-buttons>
+
+
+  <ion-content >
+
+    <div class="list ">
+
+      <label class="item item-input ">
+        <span class="input-label">姓名<span class="energized"></span></span>
+        <input type="text" placeholder={{name}} >
+      </label>
+      <label class="item item-input ">
+        <span class="input-label">学号<span class="energized"></span></span>
+        <input type="text" placeholder={{studentNumber}} >
+      </label>
+      <label class="item item-input ">
+        <span class="input-label">密码<span class="energized"></span></span>
+        <input type="text" placeholder={{password}}>
+      </label>
+      <label class="item item-input ">
+        <span class="input-label">课程<span class="energized"></span></span>
+        <input type="text" placeholder={{course}}>
+      </label>
+      <label class="item item-input ">
+        <span class="input-label">用户类型<span class="energized"></span></span>
+        <input type="text" placeholder={{usertype}}>
+      </label>
+
+      <label class="item item-input ">
+        <span class="input-label"><button class="button button-outline button-dark">识别码</button> </span>
+        <input type="text" placeholder="点击左侧按钮获取本机标识码">
+      </label>
+        
+
+      <div class="row padding">
+        <button type="submit" class="button button-positive button-block" ng-click="save()" >保存</button>
+      </div>
+
+
+    </div>
+
+  </ion-content>
+
+
+
+</ion-view>

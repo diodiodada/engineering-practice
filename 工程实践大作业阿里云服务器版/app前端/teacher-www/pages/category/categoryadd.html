@@ -1,0 +1,44 @@
+<ion-view view-title="{{title}}">
+
+  <form name="myForm" novalidate >
+    <ion-content>
+      <div class="list">
+
+        <label class="item item-input" ng-if="category.ID==0">
+
+          <input name="big" type="text" placeholder="商品大分类名称" ng-model="category.Name" ng-maxlength="16" required>
+        </label>
+
+        <div class="item item-divider">
+          {{category.Name}}
+        </div>
+
+        <label class="item item-input" ng-repeat="item in category.Children">
+
+          <input name="small" type="text" placeholder="商品小分类名称" ng-model="item.Name" ng-maxlength="16" required>
+        </label>
+
+        <a class="button button-positive button-clear margin-left icon-left ion-plus-circled" ng-click="addSection()">
+          新增小分类
+        </a>
+
+        <div class="row padding">
+          <button type="submit" class="button button-balanced button-block" ng-click="save()" >确定</button>
+        </div>
+
+        <div  ng-messages="myForm.big.$error" ng-if="myForm.big.$touched || myForm.$submitted">
+          <div ng-message="required" >大分类不能为空</div>
+          <div ng-message="maxlength" >大分类的长度不能大于16位</div>
+        </div>
+
+        <div  ng-messages="myForm.small.$error" ng-if="myForm.small.$touched || myForm.$submitted">
+          <div ng-message="required" >小分类不能为空</div>
+          <div ng-message="maxlength" >小分类的长度不能大于16位</div>
+        </div>
+
+      </div>
+
+
+    </ion-content>
+  </form>
+</ion-view>
